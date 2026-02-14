@@ -340,10 +340,10 @@ export default function CostaRicaTrip() {
       {/* Sticky Mobile Header */}
       <div className={`sticky-mobile-header ${stickyVisible ? "visible" : ""}`} style={{ marginTop: "3px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <span style={{ fontSize: "18px" }}>{day.icon}</span>
+          <span style={{ fontSize: "20px" }}>{day.icon}</span>
           <div>
-            <div style={{ fontSize: "14px", fontWeight: 700, color: day.color }}>{day.title}</div>
-            <div style={{ fontSize: "12px", color: "#8a8580" }}>{day.date}</div>
+            <div style={{ fontSize: "16px", fontWeight: 700, color: day.color }}>{day.title}</div>
+            <div style={{ fontSize: "13px", color: "#8a8580" }}>{day.date}</div>
           </div>
         </div>
       </div>
@@ -375,7 +375,7 @@ export default function CostaRicaTrip() {
         }}>
           Coleman &amp; Noah<br />Family Getaway
         </h1>
-        <p style={{ color: "#b5b0ab", fontSize: "16px", margin: "14px 0 0", lineHeight: 1.5 }}>
+        <p style={{ color: "#b5b0ab", fontSize: "17px", margin: "14px 0 0", lineHeight: 1.5 }}>
           7 Nights &middot; 8 Days &middot; 10 Travelers &middot; Pura Vida! 🌴
         </p>
 
@@ -386,7 +386,7 @@ export default function CostaRicaTrip() {
 
         {/* Desktop Sidebar */}
         <nav className="desktop-sidebar">
-          <div style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "2px", color: "#8a8580", fontWeight: 600, marginBottom: "8px", paddingLeft: "12px" }}>
+          <div style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "2px", color: "#8a8580", fontWeight: 600, marginBottom: "8px", paddingLeft: "12px" }}>
             Trip Days
           </div>
           {DAYS.map((d, i) => (
@@ -407,16 +407,16 @@ export default function CostaRicaTrip() {
               onMouseOver={e => { if (activeDay !== i) e.currentTarget.style.background = "rgba(255,255,255,0.04)"; }}
               onMouseOut={e => { if (activeDay !== i) e.currentTarget.style.background = "transparent"; }}
             >
-              <span style={{ fontSize: "22px", flexShrink: 0 }}>{d.icon}</span>
+              <span style={{ fontSize: "24px", flexShrink: 0 }}>{d.icon}</span>
               <div style={{ minWidth: 0 }}>
                 <div style={{
-                  fontSize: "13px", fontWeight: 600,
+                  fontSize: "15px", fontWeight: 600,
                   color: activeDay === i ? "#fafaf9" : "#8a8580",
                   letterSpacing: "0.5px",
                 }}>
                   {d.date}
                 </div>
-                <div style={{ fontSize: "14px", fontWeight: activeDay === i ? 700 : 500, color: activeDay === i ? "#fafaf9" : "#d6d3d1" }}>
+                <div style={{ fontSize: "16px", fontWeight: activeDay === i ? 700 : 500, color: activeDay === i ? "#fafaf9" : "#d6d3d1" }}>
                   {d.title}
                 </div>
               </div>
@@ -425,14 +425,14 @@ export default function CostaRicaTrip() {
 
           {/* Sidebar Accommodations Summary */}
           <div style={{ marginTop: "16px", padding: "14px", borderRadius: "14px", background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
-            <div style={{ fontSize: "11px", textTransform: "uppercase", letterSpacing: "1.5px", color: "#8a8580", fontWeight: 600, marginBottom: "10px" }}>
+            <div style={{ fontSize: "12px", textTransform: "uppercase", letterSpacing: "1.5px", color: "#8a8580", fontWeight: 600, marginBottom: "10px" }}>
               🏨 Stays
             </div>
-            <div style={{ fontSize: "13px", color: activeDay <= 2 ? "#fbbf24" : "#8a8580", lineHeight: 1.5, marginBottom: "6px", transition: "color 0.3s" }}>
-              El Mangroove Villas<br /><span style={{ fontSize: "12px", color: "#78716c" }}>Feb 18–21</span>
+            <div style={{ fontSize: "14px", color: activeDay <= 2 ? "#fbbf24" : "#8a8580", lineHeight: 1.5, marginBottom: "6px", transition: "color 0.3s" }}>
+              El Mangroove Villas<br /><span style={{ fontSize: "13px", color: "#78716c" }}>Feb 18–21</span>
             </div>
-            <div style={{ fontSize: "13px", color: activeDay >= 3 && activeDay <= 6 ? "#34d399" : "#8a8580", lineHeight: 1.5, transition: "color 0.3s" }}>
-              Rio Celeste Hideaway<br /><span style={{ fontSize: "12px", color: "#78716c" }}>Feb 21–25</span>
+            <div style={{ fontSize: "14px", color: activeDay >= 3 && activeDay <= 6 ? "#34d399" : "#8a8580", lineHeight: 1.5, transition: "color 0.3s" }}>
+              Rio Celeste Hideaway<br /><span style={{ fontSize: "13px", color: "#78716c" }}>Feb 21–25</span>
             </div>
           </div>
         </nav>
@@ -456,14 +456,14 @@ export default function CostaRicaTrip() {
                 boxShadow: activeDay === i ? `0 0 16px ${d.color}20` : "none",
               }}
             >
-              <div style={{ fontSize: "20px", marginBottom: "4px" }}>{d.icon}</div>
+              <div style={{ fontSize: "22px", marginBottom: "4px" }}>{d.icon}</div>
               <div style={{
-                fontSize: "12px", fontWeight: 700, color: activeDay === i ? d.color : "#b5b0ab",
+                fontSize: "13px", fontWeight: 700, color: activeDay === i ? d.color : "#b5b0ab",
                 letterSpacing: "0.5px",
               }}>
                 {d.date.split(",")[0]}
               </div>
-              <div style={{ fontSize: "11px", color: activeDay === i ? "#d6d3d1" : "#78716c", marginTop: "2px" }}>
+              <div style={{ fontSize: "12px", color: activeDay === i ? "#d6d3d1" : "#78716c", marginTop: "2px" }}>
                 {d.date.split(", ")[1]}
               </div>
             </button>
@@ -483,10 +483,10 @@ export default function CostaRicaTrip() {
               boxShadow: `0 4px 24px ${day.color}10`,
             }}>
               <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-                <span style={{ fontSize: "38px" }}>{day.icon}</span>
+                <span style={{ fontSize: "42px" }}>{day.icon}</span>
                 <div>
-                  <h2 style={{ margin: 0, fontSize: "clamp(22px, 4vw, 28px)", fontWeight: 700 }}>{day.title}</h2>
-                  <div style={{ fontSize: "15px", color: "#b5b0ab", marginTop: "4px" }}>
+                  <h2 style={{ margin: 0, fontSize: "clamp(24px, 5vw, 32px)", fontWeight: 700 }}>{day.title}</h2>
+                  <div style={{ fontSize: "16px", color: "#b5b0ab", marginTop: "4px" }}>
                     {day.date} &middot; {day.location}
                   </div>
                 </div>
@@ -506,7 +506,7 @@ export default function CostaRicaTrip() {
                   onClick={() => { setActiveTab(tab.id); setExpandedRec(null); }}
                   style={{
                     flex: 1, padding: "12px 6px", borderRadius: "12px", cursor: "pointer",
-                    border: "none", fontSize: "13px", fontWeight: 600, transition: "all 0.25s",
+                    border: "none", fontSize: "14px", fontWeight: 600, transition: "all 0.25s",
                     background: activeTab === tab.id ? `${day.color}20` : "rgba(255,255,255,0.04)",
                     color: activeTab === tab.id ? day.color : "#8a8580",
                     boxShadow: activeTab === tab.id ? `0 2px 12px ${day.color}15` : "none",
@@ -515,7 +515,7 @@ export default function CostaRicaTrip() {
                   {tab.label}
                   {tab.count > 0 && (
                     <span style={{
-                      marginLeft: "5px", fontSize: "11px", padding: "2px 7px", borderRadius: "8px",
+                      marginLeft: "5px", fontSize: "12px", padding: "2px 7px", borderRadius: "8px",
                       background: activeTab === tab.id ? `${day.color}25` : "rgba(255,255,255,0.08)",
                     }}>
                       {tab.count}
@@ -538,17 +538,17 @@ export default function CostaRicaTrip() {
                     boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
                   }}>
                     <div style={{
-                      fontSize: "20px", width: "40px", height: "40px",
+                      fontSize: "22px", width: "40px", height: "40px",
                       display: "flex", alignItems: "center", justifyContent: "center",
                       borderRadius: "12px", background: `${day.color}12`, flexShrink: 0,
                     }}>
                       {typeIcon(s.type)}
                     </div>
                     <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: "13px", color: day.color, fontWeight: 700, marginBottom: "3px" }}>
+                      <div style={{ fontSize: "14px", color: day.color, fontWeight: 700, marginBottom: "3px" }}>
                         {s.time}
                       </div>
-                      <div style={{ fontSize: "15px", color: "#e7e5e4", lineHeight: 1.6 }}>
+                      <div style={{ fontSize: "16px", color: "#e7e5e4", lineHeight: 1.6 }}>
                         {s.item}
                       </div>
                     </div>
@@ -567,7 +567,7 @@ export default function CostaRicaTrip() {
                     border: "1px solid rgba(255,255,255,0.06)",
                   }}>
                     <div style={{ fontSize: "40px", marginBottom: "12px" }}>✈️</div>
-                    <div style={{ fontSize: "16px", lineHeight: 1.5 }}>Safe travels home!<br />No local recs for departure day.</div>
+                    <div style={{ fontSize: "17px", lineHeight: 1.5 }}>Safe travels home!<br />No local recs for departure day.</div>
                   </div>
                 ) : (
                   <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
@@ -587,17 +587,17 @@ export default function CostaRicaTrip() {
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
                           <div style={{ flex: 1 }}>
                             <div style={{
-                              fontSize: "11px", color: day.color, fontWeight: 700,
+                              fontSize: "12px", color: day.color, fontWeight: 700,
                               textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "5px",
                             }}>
                               {r.category}
                             </div>
-                            <div style={{ fontSize: "16px", fontWeight: 600, color: "#fafaf9", lineHeight: 1.3 }}>
+                            <div style={{ fontSize: "17px", fontWeight: 600, color: "#fafaf9", lineHeight: 1.3 }}>
                               {r.name}
                             </div>
                           </div>
                           <span style={{
-                            color: "#8a8580", fontSize: "18px", transition: "transform 0.3s ease",
+                            color: "#8a8580", fontSize: "20px", transition: "transform 0.3s ease",
                             transform: expandedRec === i ? "rotate(180deg)" : "rotate(0deg)",
                             flexShrink: 0, marginLeft: "12px", marginTop: "4px",
                           }}>
@@ -613,7 +613,7 @@ export default function CostaRicaTrip() {
                           <div style={{
                             marginTop: "12px", paddingTop: "12px",
                             borderTop: "1px solid rgba(255,255,255,0.07)",
-                            fontSize: "15px", color: "#b5b0ab", lineHeight: 1.7,
+                            fontSize: "16px", color: "#b5b0ab", lineHeight: 1.7,
                           }}>
                             {r.desc}
                           </div>
@@ -637,8 +637,8 @@ export default function CostaRicaTrip() {
                     alignItems: "flex-start",
                     boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
                   }}>
-                    <span style={{ fontSize: "18px", flexShrink: 0, marginTop: "1px" }}>💡</span>
-                    <div style={{ fontSize: "15px", color: "#d6d3d1", lineHeight: 1.6 }}>
+                    <span style={{ fontSize: "20px", flexShrink: 0, marginTop: "1px" }}>💡</span>
+                    <div style={{ fontSize: "16px", color: "#d6d3d1", lineHeight: 1.6 }}>
                       {tip}
                     </div>
                   </div>
@@ -685,7 +685,7 @@ export default function CostaRicaTrip() {
                       />
                     </div>
                     <div style={{
-                      padding: "12px 14px", fontSize: "13px",
+                      padding: "12px 14px", fontSize: "14px",
                       color: "#b5b0ab", fontWeight: 500, lineHeight: 1.4,
                     }}>
                       {img.caption}
@@ -709,10 +709,10 @@ export default function CostaRicaTrip() {
             }}>
               <div className="footer-grid" style={{ display: "grid", gap: "20px" }}>
                 <div>
-                  <div style={{ fontSize: "12px", color: "#8a8580", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "8px", fontWeight: 600 }}>
+                  <div style={{ fontSize: "13px", color: "#8a8580", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "8px", fontWeight: 600 }}>
                     ☀️ Weather
                   </div>
-                  <div style={{ fontSize: "15px", color: "#d6d3d1", lineHeight: 1.6 }}>
+                  <div style={{ fontSize: "16px", color: "#d6d3d1", lineHeight: 1.6 }}>
                     {activeDay <= 2
                       ? "Beach: 86–94°F (30–35°C), sunny, dry. Calm waters. Possible Papagayo winds."
                       : activeDay <= 6
@@ -721,10 +721,10 @@ export default function CostaRicaTrip() {
                   </div>
                 </div>
                 <div>
-                  <div style={{ fontSize: "12px", color: "#8a8580", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "8px", fontWeight: 600 }}>
+                  <div style={{ fontSize: "13px", color: "#8a8580", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "8px", fontWeight: 600 }}>
                     📞 Emergency
                   </div>
-                  <div style={{ fontSize: "15px", color: "#d6d3d1", lineHeight: 1.6 }}>
+                  <div style={{ fontSize: "16px", color: "#d6d3d1", lineHeight: 1.6 }}>
                     24/7 Support: {EMERGENCY.support}<br />
                     Consultant: {EMERGENCY.consultant}<br />
                     Itinerary: #{EMERGENCY.itineraryId}
@@ -742,7 +742,7 @@ export default function CostaRicaTrip() {
                 background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)",
                 boxShadow: "0 2px 12px rgba(0,0,0,0.1)",
               }}>
-                <div style={{ fontSize: "12px", color: "#8a8580", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "14px", fontWeight: 600 }}>
+                <div style={{ fontSize: "13px", color: "#8a8580", textTransform: "uppercase", letterSpacing: "1.5px", marginBottom: "14px", fontWeight: 600 }}>
                   🏨 Accommodations
                 </div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
@@ -752,10 +752,10 @@ export default function CostaRicaTrip() {
                     border: activeDay <= 2 ? "1px solid rgba(245,158,11,0.18)" : "1px solid rgba(255,255,255,0.06)",
                     transition: "all 0.3s",
                   }}>
-                    <div style={{ fontSize: "15px", fontWeight: 600, color: activeDay <= 2 ? "#fbbf24" : "#b5b0ab" }}>
+                    <div style={{ fontSize: "16px", fontWeight: 600, color: activeDay <= 2 ? "#fbbf24" : "#b5b0ab" }}>
                       El Mangroove Villas
                     </div>
-                    <div style={{ fontSize: "14px", color: "#8a8580", marginTop: "3px", lineHeight: 1.5 }}>
+                    <div style={{ fontSize: "15px", color: "#8a8580", marginTop: "3px", lineHeight: 1.5 }}>
                       Feb 18–21 &middot; 4-BR Villa &middot; Playa Panamá &middot; Check-in 3PM / Out 12PM
                     </div>
                   </div>
@@ -765,10 +765,10 @@ export default function CostaRicaTrip() {
                     border: activeDay >= 3 && activeDay <= 6 ? "1px solid rgba(16,185,129,0.18)" : "1px solid rgba(255,255,255,0.06)",
                     transition: "all 0.3s",
                   }}>
-                    <div style={{ fontSize: "15px", fontWeight: 600, color: activeDay >= 3 && activeDay <= 6 ? "#34d399" : "#b5b0ab" }}>
+                    <div style={{ fontSize: "16px", fontWeight: 600, color: activeDay >= 3 && activeDay <= 6 ? "#34d399" : "#b5b0ab" }}>
                       Rio Celeste Hideaway Boutique Hotel
                     </div>
-                    <div style={{ fontSize: "14px", color: "#8a8580", marginTop: "3px", lineHeight: 1.5 }}>
+                    <div style={{ fontSize: "15px", color: "#8a8580", marginTop: "3px", lineHeight: 1.5 }}>
                       Feb 21–25 &middot; 4 Casitas &middot; Tenorio Volcano &middot; Check-in 2PM / Out 12PM &middot; $200/room resort credit
                     </div>
                   </div>
@@ -780,7 +780,7 @@ export default function CostaRicaTrip() {
             <div style={{
               marginTop: "12px", padding: "18px 22px", borderRadius: "16px",
               background: "rgba(16,185,129,0.05)", border: "1px solid rgba(16,185,129,0.12)",
-              fontSize: "14px", color: "#6ee7b7", lineHeight: 1.7,
+              fontSize: "15px", color: "#6ee7b7", lineHeight: 1.7,
               boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
             }}>
               <strong>✅ What's Included:</strong> All taxes, 24/7 in-country support, satisfaction guarantee, private transfers, meet &amp; greet, accommodations, breakfasts, tours (zip line, chocolate, tubing), resort credits, and Peace of Mind Vacation Coverage (100% cash back with 14-day notice).
