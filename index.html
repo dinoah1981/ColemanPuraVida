@@ -5,13 +5,234 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Costa Rica 2026 — Coleman / Noah Family Trip</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌴</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+      /* === Reset & Base === */
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      body { background: #0c0a09; }
+      html { scroll-behavior: smooth; }
+      body {
+        background: #0c0a09;
+        font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* === Keyframe Animations === */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes slideUp {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fadeInScale {
+        from { opacity: 0; transform: scale(0.96); }
+        to { opacity: 1; transform: scale(1); }
+      }
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      @keyframes subtleFloat {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-3px); }
+      }
+      @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      @keyframes lightboxIn {
+        from { opacity: 0; transform: scale(0.92); }
+        to { opacity: 1; transform: scale(1); }
+      }
+
+      /* === Animation Utility Classes === */
+      .animate-fade-in {
+        animation: fadeIn 0.4s ease-out both;
+      }
+      .animate-slide-up {
+        animation: slideUp 0.4s ease-out both;
+      }
+      .animate-fade-in-scale {
+        animation: fadeInScale 0.35s ease-out both;
+      }
+      .animate-slide-up-1 { animation: slideUp 0.4s ease-out 0.03s both; }
+      .animate-slide-up-2 { animation: slideUp 0.4s ease-out 0.06s both; }
+      .animate-slide-up-3 { animation: slideUp 0.4s ease-out 0.09s both; }
+      .animate-slide-up-4 { animation: slideUp 0.4s ease-out 0.12s both; }
+      .animate-slide-up-5 { animation: slideUp 0.4s ease-out 0.15s both; }
+      .animate-slide-up-6 { animation: slideUp 0.4s ease-out 0.18s both; }
+      .animate-slide-up-7 { animation: slideUp 0.4s ease-out 0.21s both; }
+
+      /* === Card Hover Effects === */
+      .card-hover {
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      }
+      .card-hover:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+      }
+
+      /* === Image Loading Shimmer === */
+      .img-loading {
+        background: linear-gradient(90deg, rgba(255,255,255,0.04) 25%, rgba(255,255,255,0.08) 50%, rgba(255,255,255,0.04) 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+      }
+
+      /* === Scrollbar Styling === */
+      .day-scroller::-webkit-scrollbar { display: none; }
+      .day-scroller { scrollbar-width: none; -ms-overflow-style: none; }
+
+      /* === Responsive: Mobile First === */
+      .desktop-sidebar { display: none; }
+      .mobile-day-scroller { display: flex; }
+      .app-layout { display: block; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+
+      /* === Desktop (768px+) === */
+      @media (min-width: 768px) {
+        .desktop-sidebar {
+          display: flex;
+          flex-direction: column;
+          gap: 6px;
+          position: sticky;
+          top: 24px;
+          height: fit-content;
+          max-height: calc(100vh - 48px);
+          overflow-y: auto;
+          padding-right: 12px;
+        }
+        .mobile-day-scroller { display: none; }
+        .app-layout {
+          display: grid;
+          grid-template-columns: 260px 1fr;
+          gap: 32px;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 32px;
+        }
+        .app-header {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding-left: 32px;
+          padding-right: 32px;
+        }
+        .gallery-grid { grid-template-columns: 1fr 1fr 1fr; }
+        .content-area { max-width: 780px; }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+        }
+      }
+
+      /* === Large Desktop (1200px+) === */
+      @media (min-width: 1200px) {
+        .app-layout {
+          grid-template-columns: 280px 1fr;
+          gap: 40px;
+          padding: 0 48px;
+        }
+        .app-header {
+          padding-left: 48px;
+          padding-right: 48px;
+        }
+      }
+
+      /* === Lightbox === */
+      .lightbox-backdrop {
+        position: fixed; inset: 0; z-index: 1000;
+        background: rgba(0,0,0,0.88);
+        backdrop-filter: blur(20px);
+        display: flex; align-items: center; justify-content: center;
+        animation: fadeIn 0.3s ease-out;
+        cursor: pointer;
+      }
+      .lightbox-content {
+        position: relative;
+        max-width: 90vw; max-height: 85vh;
+        animation: lightboxIn 0.35s ease-out;
+        cursor: default;
+      }
+      .lightbox-content img {
+        max-width: 100%; max-height: 75vh;
+        border-radius: 12px;
+        object-fit: contain;
+        display: block;
+      }
+      .lightbox-caption {
+        text-align: center;
+        color: #d6d3d1;
+        font-size: 15px;
+        margin-top: 16px;
+        font-weight: 500;
+      }
+      .lightbox-close {
+        position: absolute; top: -44px; right: 0;
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fafaf9; font-size: 20px;
+        width: 36px; height: 36px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+        transition: background 0.2s;
+      }
+      .lightbox-close:hover { background: rgba(255,255,255,0.2); }
+      .lightbox-nav {
+        position: absolute; top: 50%; transform: translateY(-50%);
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.15);
+        color: #fafaf9; font-size: 22px;
+        width: 44px; height: 44px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+        transition: background 0.2s;
+      }
+      .lightbox-nav:hover { background: rgba(255,255,255,0.25); }
+      .lightbox-prev { left: -60px; }
+      .lightbox-next { right: -60px; }
+      @media (max-width: 767px) {
+        .lightbox-prev { left: -8px; }
+        .lightbox-next { right: -8px; }
+        .lightbox-nav { width: 38px; height: 38px; font-size: 18px; }
+      }
+
+      /* === Sticky Mobile Header === */
+      .sticky-mobile-header {
+        position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+        padding: 10px 16px;
+        background: rgba(12,10,9,0.85);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+      }
+      .sticky-mobile-header.visible {
+        transform: translateY(0);
+      }
+      @media (min-width: 768px) {
+        .sticky-mobile-header { display: none; }
+      }
+
+      /* === Progress Bar === */
+      .progress-bar {
+        position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+        height: 3px;
+        display: flex;
+      }
+      @media (min-width: 768px) {
+        .progress-bar { height: 4px; }
+      }
     </style>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
