@@ -38,10 +38,10 @@ const DAYS = [
       { name: "Resort Pool & Cabanas", desc: "Oceanfront infinity pool with service — grab cocktails and watch the sunset on your first evening", category: "🏊 Resort" },
     ],
     gallery: [
-      { url: "https://images.trvl-media.com/lodging/13000000/12310000/12306000/12305975/e2ce0b75.jpg", caption: "El Mangroove Resort — Your Home Base" },
-      { url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/09/7c/3c/el-mangroove-autograph.jpg", caption: "Oceanfront Pool & Lounge" },
-      { url: "https://images.trvl-media.com/lodging/13000000/12310000/12306000/12305975/3e39e05c.jpg", caption: "Playa Panamá — Calm Waters Await" },
-      { url: "https://cdn.costaricaexperts.com/images/attractions/PlayaPanama-3.jpg", caption: "Sunset at Playa Panamá" },
+      { url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&fit=crop", caption: "El Mangroove Resort — Your Home Base" },
+      { url: "https://images.unsplash.com/photo-1585549071959-94da9dbf8704?w=800&fit=crop", caption: "Oceanfront Pool & Lounge" },
+      { url: "https://images.unsplash.com/photo-1718988147041-75ae65dbd63d?w=800&fit=crop", caption: "Playa Panamá — Calm Waters Await" },
+      { url: "https://images.unsplash.com/photo-1580787511894-e041123e303f?w=800&fit=crop", caption: "Sunset at Playa Panamá" },
     ],
   },
   {
@@ -68,10 +68,10 @@ const DAYS = [
       { name: "Aqua Sport (Playa Hermosa)", desc: "Peruvian-Costa Rican beachside restaurant with hammocks, tables in the sand, Adirondack chairs. 7 types of ceviche, grilled snapper, Peruvian 'Causa' potato dishes. Live music. Perfect casual family dinner", category: "🍽️ Casual" },
     ],
     gallery: [
-      { url: "https://mytanfeet.com/wp-content/uploads/2015/09/gulf-of-papagayo-costa-rica-snorkeling.jpg", caption: "Snorkeling the Gulf of Papagayo" },
-      { url: "https://www.gingercostarica.com/uploads/1/1/3/3/113344409/published/img-9363-2.jpg", caption: "Ginger Restaurant — Treehouse Tapas Bar" },
-      { url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/7e/9d/07/playa-panama.jpg", caption: "Calm Waters of Playa Panamá" },
-      { url: "https://mytanfeet.com/wp-content/uploads/2015/09/gulf-of-papagayo-costa-rica-boat.jpg", caption: "Boat Tour — Gulf of Papagayo" },
+      { url: "https://images.unsplash.com/photo-1542299862-97a802f2a7d8?w=800&fit=crop", caption: "Snorkeling the Gulf of Papagayo" },
+      { url: "https://images.unsplash.com/photo-1560717844-cd0b22784b00?w=800&fit=crop", caption: "Ginger Restaurant — Treehouse Tapas Bar" },
+      { url: "https://images.unsplash.com/photo-1548661651-9adb0e0ccc98?w=800&fit=crop", caption: "Calm Waters of Playa Panamá" },
+      { url: "https://images.unsplash.com/photo-1767780931399-9b0aa3afd39c?w=800&fit=crop", caption: "Boat Tour — Gulf of Papagayo" },
     ],
   },
   {
@@ -105,10 +105,10 @@ const DAYS = [
       { name: "Roberto's at La Gaviota (Playa Hermosa)", desc: "Casual beachside spot at La Gaviota Tropical hotel. Traditional Costa Rican cuisine plus international favorites — fish, pork, seafood, chicken. Good for picky eaters. Right on the sand.", category: "🍽️ Casual" },
     ],
     gallery: [
-      { url: "https://www.twoweeksincostarica.com/wp-content/uploads/2024/06/playa-nacascolo-views-1024x768.jpg", caption: "Playa Nacascolo — Calm Culebra Bay" },
-      { url: "https://www.twoweeksincostarica.com/wp-content/uploads/2024/06/playa-nacascolo-sand-1024x768.jpg", caption: "Golden Sand & Crystal Water" },
-      { url: "https://puravidamoms.com/wp-content/uploads/2019/12/playa-nacascolo-costa-rica.jpg", caption: "Secluded Beach on the Peninsula" },
-      { url: "https://www.gingercostarica.com/uploads/1/1/3/3/113344409/published/img-9413.jpg", caption: "Ginger — Friday Martini Night" },
+      { url: "https://images.unsplash.com/photo-1761576881436-310e3b34809c?w=800&fit=crop", caption: "Playa Nacascolo — Calm Culebra Bay" },
+      { url: "https://images.unsplash.com/photo-1737398574188-dd79de1fbff9?w=800&fit=crop", caption: "Golden Sand & Crystal Water" },
+      { url: "https://images.unsplash.com/flagged/photo-1556982946-787d5a1ec8ac?w=800&fit=crop", caption: "Secluded Beach on the Peninsula" },
+      { url: "https://images.unsplash.com/photo-1625321643320-5321f48312b2?w=800&fit=crop", caption: "Ginger — Friday Martini Night" },
     ],
   },
   {
@@ -138,10 +138,10 @@ const DAYS = [
       { name: "Bijagua Town Walk", desc: "The real Costa Rica: a 5,000-person farming village where cows roam the streets and chickens run free. Main street has a few sodas (family-run eateries), banks, and a pharmacy. Ask locals for 'agua de pipa' (fresh coconut water) from roadside stands", category: "🏘️ Authentic" },
     ],
     gallery: [
-      { url: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/278371539.jpg", caption: "Rio Celeste Hideaway — Your Rainforest Retreat" },
-      { url: "https://www.rfrtravel.com/wp-content/uploads/2022/10/DSC06853-1200x800.jpg", caption: "Hideaway Casita in the Jungle" },
-      { url: "https://mytanfeet.com/wp-content/uploads/2016/06/bijagua-costa-rica-mountains.jpg", caption: "Bijagua — Mountain Village Life" },
-      { url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/f0/38/01/rio-celeste-hideaway.jpg", caption: "Hotel Pool Surrounded by Rainforest" },
+      { url: "https://images.unsplash.com/photo-1760067537116-de1f76fe8f95?w=800&fit=crop", caption: "Rio Celeste Hideaway — Your Rainforest Retreat" },
+      { url: "https://images.unsplash.com/photo-1657737738312-0f524f5ed190?w=800&fit=crop", caption: "Hideaway Casita in the Jungle" },
+      { url: "https://images.unsplash.com/photo-1762379972568-baa79754aca8?w=800&fit=crop", caption: "Bijagua — Mountain Village Life" },
+      { url: "https://plus.unsplash.com/premium_photo-1682097702864-b9a9ae179776?w=800&fit=crop", caption: "Hotel Pool Surrounded by Rainforest" },
     ],
   },
   {
@@ -166,10 +166,10 @@ const DAYS = [
       { name: "Hotel Spa", desc: "After the zip line adrenaline, unwind with a spa treatment — covered by your $200 resort credit", category: "💆 Wellness" },
     ],
     gallery: [
-      { url: "https://images.squarespace-cdn.com/content/v1/5e3f0b1ef2e69e41bbdc10c5/1617381474397-zipline-rainforest-costa-rica.jpg", caption: "Zip Lining Over the Canopy" },
-      { url: "https://www.anywhere.com/img-a/costa-rica/attractions/tenorio-volcano/rio-celeste-waterfall.jpg", caption: "Rio Celeste Waterfall — Tenorio National Park" },
-      { url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/db/c5/cc/heliconias-hanging-bridges.jpg", caption: "Heliconias Hanging Bridges" },
-      { url: "https://www.twoweeksincostarica.com/wp-content/uploads/2024/06/rio-celeste-blue-water-1024x768.jpg", caption: "The Famous Blue Waters of Rio Celeste" },
+      { url: "https://images.unsplash.com/photo-1651183993471-ea2391960f6f?w=800&fit=crop", caption: "Zip Lining Over the Canopy" },
+      { url: "https://images.unsplash.com/photo-1700474449167-aa7171e64af7?w=800&fit=crop", caption: "Rio Celeste Waterfall — Tenorio National Park" },
+      { url: "https://images.unsplash.com/photo-1597693253938-0ba06637f6e5?w=800&fit=crop", caption: "Heliconias Hanging Bridges" },
+      { url: "https://images.unsplash.com/photo-1764788799559-824c59d2104a?w=800&fit=crop", caption: "The Famous Blue Waters of Rio Celeste" },
     ],
   },
   {
@@ -197,10 +197,10 @@ const DAYS = [
       { name: "Finca Verde Lodge Nature Walk", desc: "Locally-owned lodge offering short guided nature walks — great for spotting frogs, sloths, and birds up close. Educational for the kids, low-intensity", category: "🦥 Wildlife" },
     ],
     gallery: [
-      { url: "https://www.anywherecostarica.com/images/attractions/chocolate-tour-la-fortuna.jpg", caption: "Cacao Plantation Tour" },
-      { url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/62/d9/01/bijagua-rainforest-tours.jpg", caption: "Rainforest Wildlife — Toucans & More" },
-      { url: "https://mytanfeet.com/wp-content/uploads/2016/06/bijagua-costa-rica-town.jpg", caption: "Bijagua Village — Authentic Costa Rica" },
-      { url: "https://www.twoweeksincostarica.com/wp-content/uploads/2024/06/rio-celeste-swimming-1024x768.jpg", caption: "Swimming in Rio Celeste" },
+      { url: "https://images.unsplash.com/photo-1615289442666-fed9cec7169a?w=800&fit=crop", caption: "Cacao Plantation Tour" },
+      { url: "https://images.unsplash.com/photo-1768557889073-553766722809?w=800&fit=crop", caption: "Rainforest Wildlife — Toucans & More" },
+      { url: "https://images.unsplash.com/photo-1664851490956-b45905d6ffba?w=800&fit=crop", caption: "Bijagua Village — Authentic Costa Rica" },
+      { url: "https://images.unsplash.com/photo-1766776341444-f8f5c95693cc?w=800&fit=crop", caption: "Swimming in Rio Celeste" },
     ],
   },
   {
@@ -228,10 +228,10 @@ const DAYS = [
       { name: "The Hummingbird Restaurant (Bijagua)", desc: "Beautiful garden restaurant where hummingbirds feed right next to your table. Nice outdoor seating, great food and service. Worth the drive into the village for a unique local experience", category: "🍽️ Authentic" },
     ],
     gallery: [
-      { url: "https://images.squarespace-cdn.com/content/v1/rio-celeste-tubing-costa-rica-adventure.jpg", caption: "River Tubing on Rio Celeste" },
-      { url: "https://www.twoweeksincostarica.com/wp-content/uploads/2024/06/rio-celeste-river-1024x768.jpg", caption: "Turquoise Waters — Your Tubing Route" },
-      { url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/f0/37/ff/tapirus-paradise.jpg", caption: "Tapirus Paradise — Wood-Carved Dining" },
-      { url: "https://cf.bstatic.com/xdata/images/hotel/max1024x768/278371545.jpg", caption: "Last Night at Rio Celeste Hideaway" },
+      { url: "https://images.unsplash.com/photo-1649327838577-caf10c298e8c?w=800&fit=crop", caption: "River Tubing on Rio Celeste" },
+      { url: "https://images.unsplash.com/photo-1548164806-9709e698bfc8?w=800&fit=crop", caption: "Turquoise Waters — Your Tubing Route" },
+      { url: "https://images.unsplash.com/photo-1770549872541-889645b719bb?w=800&fit=crop", caption: "Tapirus Paradise — Wood-Carved Dining" },
+      { url: "https://images.unsplash.com/photo-1767324672978-f26a05319e63?w=800&fit=crop", caption: "Last Night at Rio Celeste Hideaway" },
     ],
   },
   {
@@ -254,8 +254,8 @@ const DAYS = [
     ],
     recs: [],
     gallery: [
-      { url: "https://www.twoweeksincostarica.com/wp-content/uploads/2024/06/rio-celeste-blue-water-1024x768.jpg", caption: "Pura Vida — Until Next Time!" },
-      { url: "https://cdn.costaricaexperts.com/images/attractions/PlayaPanama-3.jpg", caption: "Memories of Playa Panamá" },
+      { url: "https://images.unsplash.com/photo-1661163091023-b9b4f49e7dad?w=800&fit=crop", caption: "Pura Vida — Until Next Time!" },
+      { url: "https://images.unsplash.com/photo-1620550491262-58faf507b6d6?w=800&fit=crop", caption: "Memories of Playa Panamá" },
     ],
   },
 ];
